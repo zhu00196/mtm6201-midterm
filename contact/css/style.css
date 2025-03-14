@@ -169,7 +169,25 @@ header>div>a{
     background-color:  #FF9500;
 }
 
-footer{width: 90%;}
+
+
+/* main part  */
+
+main{width: 90%;}
+main p{padding: 3%;}
+main>ul{
+    padding: 3%;
+}
+main>ul>li{
+    padding-top: 5%;
+}
+
+
+/* footer part  */
+footer{
+    width: 90%;
+    margin-left: 5%;
+}
 
 
 
@@ -258,7 +276,318 @@ footer{width: 90%;}
         margin-right: 700px;
     }
     .nav .navigation li a{
-color: black;
+    color: black;
+    }
+    .signlogin{
+        order: 2;
+    }
+    .sign{
+        padding-left: 0px;
+    }
+    .login{
+        margin-left: 10px;
+    }
+
+             
+
+
+
+
+
+/* footer ; */
+    .foot{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .homeaboutsocial{
+        justify-content: space-between;
+    }
+    .Social{
+        width: auto;
+        order: 0;
+    }
+}/* reset for page  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Animation made  */
+
+a {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.1);
+    background-color: #ff5733; /* Highlight effect */
+}
+
+/* Keyframes for Banner Text Animation */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying Animation to Banner Heading */
+h1, h2, p {
+    animation: fadeSlideUp 1s ease-out;
+}
+
+/* skip link         */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px;
+}
+
+/* global style */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+*,
+*::after
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    line-height: 1.5;
+}
+
+/* img{width: 100%;} */
+
+h1,h2,h3,h4{
+    font-weight: bold;
+    margin: 0.5em 0 0.2em;
+    width: 95%;
+    padding: 2.5%;
+}
+h1{
+    font-size: 5.063em;
+}
+h2{
+    font-size: 3.375em;
+}
+h3{
+    font-size: 2.25em;
+}
+h4{
+    font-size: 1.5em;
+}
+p{  
+    font-size: 1em;
+    margin: 1em 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* whole body setting */
+body{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  background-color: #f7f7f7;
+}
+
+header, .main, footer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+
+/* header decoration */
+/* coupon decoration */
+header>div>a{
+    font-size: 1rem;
+    color: white;
+}
+.coupon{
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    background-color: #FF9500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* navigation */
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.nav ul{display: none;}
+.nav img{width: 10%;height: 10%;}
+.nav div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sign{
+    padding-left: 100px;
+    color: black;
+}
+.login{
+    margin-left: 50px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color:  #FF9500;
+}
+
+
+
+/* main part  */
+
+main{width: 90%;}
+main p{padding: 3%;}
+main>ul{
+    padding: 3%;
+}
+main>ul>li{
+    padding-top: 5%;
+}
+
+
+/* footer part  */
+footer{
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* the footer */
+
+.foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.contact>img{
+    width: 70px;
+    margin-left: -15px;
+}
+
+.homeaboutsocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.Social{
+    width: 100%;
+    order: 1;
+}
+.Social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+
+
+@media screen and (min-width: 1200px){
+
+    /* whole character setting */
+
+    h1{
+        font-size: 5.063em;
+    }
+    h2{
+        font-size: 3.375em;
+    }
+    h3{
+        font-size: 2.25em;
+    }
+    h4{
+        font-size: 1.5em;
+    }
+    p{  
+        font-size: 1em;
+        margin: 1em 0;
+    }
+
+    /* header part  */
+
+    header{
+        width: 98%;
+    }
+
+    .nav{
+        width: 90%;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .nav img{width: 5%; height: 5%;}
+    .nav .hamburger{display: none;}
+    .nav ul{display: unset;}
+    .nav .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin-right: 700px;
+    }
+    .nav .navigation li a{
+    color: black;
     }
     .signlogin{
         order: 2;
